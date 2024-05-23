@@ -1,0 +1,96 @@
+:root {
+    --bg-color: #0B1D26;
+    --yellow-text:  #F7DF1E;
+    --main-color: #ffffff;
+}
+
+@font-face {
+    font-family: "Brygada";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../assets/fonts/Brygada-1918.woff2")format("woff2");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: bold;
+    font-weight: 700;
+    src: url("../assets/fonts/OpenSans-Bold.woff2")format("woff2");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../assets/fonts/OpenSans-Regular.woff2")format("woff2");
+}
+
+.body {
+    background: var(--bg-color);
+    line-height: 2.3;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 1280px;
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--main-color);
+    flex-basis: 640px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    height: 713px;
+}
+
+.tag-line {
+    color: var(--yellow-text);
+    position: relative;
+}
+
+.number {
+    position: absolute;
+}
+
+.profession {
+    position: relative;
+    left: 100px;
+}
+
+.profession::before {
+    content: ' ';
+    background: var(--yellow-text);
+    width: 70px;
+    height: 2px;
+    position: absolute;
+    top: 15px;
+    left: 29px;
+}
+
+.info-title {
+    font-family: "Brugada", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 64px;
+    line-height: 70.4px;
+}
+
+.more-info {
+    color: var(--yellow-text);
+    display: flex;
+}
+
+.more-info p:first-child {
+    padding-right: 10px;
+}
+
+
